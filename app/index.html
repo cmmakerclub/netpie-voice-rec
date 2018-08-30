@@ -67,7 +67,6 @@
       utterance.pitch = 1.0
       // utterance.volume = 0.5;
       utterance.lang = 'th-TH'
-
       utterance.onstart = function (event) {
         startFn && startFn(event)
       }
@@ -80,9 +79,6 @@
         speechSynthesis.speak(utterance, function () {
           console.log('arguments: ', arguments)
         })
-      }
-      else {
-        console.log('SKIP')
       }
     }
     console.log('ready')
